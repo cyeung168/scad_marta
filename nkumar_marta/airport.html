@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MARTA | Airport Access</title>
+<script type="text/javascript" src="//use.typekit.net/kuz2tlo.js"></script>
+<script type="text/javascript">
+try{Typekit.load();}catch(e){}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link href="global.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+
+		if (!$.browser.opera) {
+    
+			// select element styling
+			$('select.select').each(function(){
+				var title = $(this).attr('title');
+				if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+				$(this)
+					.css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+					.after('<span class="select">' + title + '</span>')
+					.change(function(){
+						val = $('option:selected',this).text();
+						$(this).next().text(val);
+						})
+			});
+
+		};
+		
+	});
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/facebook_hover.png','images/twitter_hover.png','images/vimeo_hover.png')">
+<div id="header_wrapper">
+	<div id="header">
+    	<a href="index.html">
+        	<img src="images/logo-site.png" alt="marta_logo" class="middle" />
+        </a>
+        Metropolitan Atlanta Rapid Transit Authority
+<div id="form"> <form>
+		<input name="search" placeholder="Search" type="text">
+		</form></div>
+    </div>
+</div>
+
+<nav>
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="#" class="MenuBarItemSubmenu">Schedules & Maps</a>
+    <ul>
+      <li><a href="rail.html">Rail Stations & Schedules</a></li>
+      <li><a href="bus.html">Bus Routes & Schedules</a></li>
+      <li><a href="maps.html">Rail & Bus Maps</a></li>
+    </ul>
+  </li>
+<li><a href="#" class="MenuBarItemSubmenu">Using MARTA</a>
+  <ul>
+      <li><a href="hours.html">Hours</a></li>
+      <li><a href="parking.html">Parking</a></li>
+      <li><a href="trip-planner.html">Trip Planner</a></li>
+      <li><a href="airport.html">Airport Access</a></li>
+    </ul>
+</li>
+  <li><a class="MenuBarItemSubmenu" href="#">Fares & Discounts</a>
+    <ul>
+      <li><a href="breeze.html">Breeze Card</a></li>
+      <li><a href="fares-passes.html">Fares & Passes</a></li>
+      <li><a href="visitor.html">Visitors Pass</a></li>
+      <li><a href="university.html">University Pass</a></li>
+    </ul>
+  </li>
+  <li><a class="MenuBarItemSubmenu" href="#">About MARTA</a>
+    <ul>
+      <li><a href="history-future.html">History & Future</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="leaders.html">Leadership</a></li>
+      <li><a href="police.html">MARTA Police</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </li> 
+    <li><a class="MenuBarItemSubmenu" href="#">News & Events</a>
+      <ul>
+         <li><a href="press.html">Press Releases</a></li>
+      <li><a href="photo-policy.html">Photo Policy</a></li>
+      <li><a href="calendar.html">Calendar of Events</a></li>
+     </ul>
+    </li>   
+    <li><a href="index.html">Home</a></li>
+ </ul>
+</nav>
+
+
+
+
+
+
+<div id="content_wrapper">
+	<div id="col">
+    	<div class="sidenav"><a href="hours.html">Hours</a></div>
+        <div class="sidenav"><a href="parking.html">Parking</a></div>
+        <div class="sidenav"><a href="trip-planner.html">Trip Planner</a></div>
+        <div class="sidenav2"><a href="airport.html">Airport Access</a></div></div>
+	<div id="col2">
+    	<div class="box5">Airport Access
+        </div>
+        <p>MARTA's airport station is attached to the Airport, right off baggage claim. One way fares are only $2.50 and within 20 minutes, you can be downtown (taxi's are about $30 plus tip). Click here for a helpful AJC/Hartsfield-Jackson Guide</p>
+
+      <p>AirTran passengers have the added convenience of having ticketing counters available just outside the Airport MARTA Station!</p>
+      
+<h2>MARTA to the Airport</h2>
+<p>Catch MARTA first. With direct train service to Hartsfield-Jackson Atlanta International Airport, MARTA is your efficient, no-hassle connection.</p>
+
+
+<p>MARTA's Airport Station - the final stop on the South Line - is only a 17-minute trip from Five Points Station, the hub of the MARTA rail system. Other popular destinations are equally accessible from the airport.</p>
+
+
+<p>All southbound trains go to the airport and have plenty of luggage space available at the end of each railcar. Elevators, located in every rail station, provide additional convenience to travelers carrying multiple bags.</p>
+
+<h2>How to Find MARTA in Hartsfield-Jackson</h2>
+<p>Arriving air travelers should follow the Ground Transportation signs to MARTA. The entrance to MARTA's Airport Station is located inside the western end of the airport's main terminal. Our faregates are just a few feet from the baggage claim areas. Follow the signs, they are plentiful.</p>
+
+<h2>Park, ride and fly.</h2>
+<p>Long-term parking makes traveling to and from the airport a breeze.<br />
+Click here for parking availability at each rail station.</p>
+        </div>
+        
+    <div id="col3">
+<div class="box6">Train Hours</div>
+<p>Weekdays:  4.45 am to 1 am</p>
+
+<p>Weekends:  6 am to 1 am</p>
+
+<p><span>After 7 pm, Red line travels between Lindbergh & North Springs</span><br />
+<span>After 7 pm, Green line travels between Bankhead & Vine City</span></p>
+<div class="box6">Train Frequencies</div>
+<p>Weekdays:  6 am to 7 pm: 15 minutes all lines</p>
+<p>Weekdays:  7 pm to 1 am:  20 minutes all lines</p>
+<p>Weekends:  20 minutes all lines</p>
+  </div></div>  
+</div>      
+
+
+
+
+
+<div id="footer_wrapper">
+	<div id="footer">
+		<div class="col">
+			<h2>Schedules & Maps</h2>
+			<ul>
+			<li><a href="rail.html">Rail Stations & Schedules</a></li>
+			<li><a href="bus.html">Bus Routes & Schedules</a></li>
+			<li><a href="maps.html">Rail & Bus Maps</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h2>Using MARTA</h2>
+			<ul>
+			<li><a href="hours.html">Hours</a></li>
+			<li><a href="parking.html">Parking</a></li>
+			<li><a href="trip-planner.html">Trip Planner</a></li>
+			<li><a href="airport.html">Airport Access</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h2>Fares & Discounts</h2>
+			<ul>
+			<li><a href="breeze.html">Breeze Card</a></li>
+			<li><a href="fares-passes.html">Fares & Passes</a></li>
+			<li><a href="visitor.html">Visitor Pass</a></li>
+			<li><a href="university.html">University Pass</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h2>About MARTA</h2>
+			<ul>
+			<li><a href="history-future.html">History & Future</a></li>
+			<li><a href="careers.html">Careers</a></li>
+			<li><a href="leaders.html">Leadership</a></li>
+			<li><a href="police.html">MARTA Police</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h2>News & Events</h2>
+			<ul>
+			<li><a href="press.html">Press Releases</a></li>
+			<li><a href="photo-policy.html">Photo Policy</a></li>
+			<li><a href="calendar.html">Calendar of Events</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h2><a href="#">Home</a></h2>
+			<h2>Connect with Us</h2>
+	<a href="facebook.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('facebook','','images/facebook_hov.png',1)"><img src="images/facebook.png" alt="facebook" width="8" height="18" id="facebook" /></a>
+    <a href="twitter.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('twitter','','images/twitter_hov.png',1)"><img src="images/twitter.png" alt="twitter" width="22" height="18" id="twitter" /></a> 
+    <a href="vimeo.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('vimeo','','images/vimeo_hov.png',1)"><img src="images/vimeo.png" alt="vimeo" width="20" height="18" id="vimeo" /></a> </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+
+</body>
+</html>
